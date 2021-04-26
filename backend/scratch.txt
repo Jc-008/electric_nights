@@ -1,0 +1,19 @@
+1. generate a migration and model file in backend FOLDER
+npx sequelize model:generate --name User --attributes username:string,email:string,hashedPassword:string
+
+2.Migrate the Users table by running the following command:
+npx dotenv sequelize db:migrate
+
+Command to undo the migration:
+npx dotenv sequelize db:migrate:undo
+
+3. Add the constraints for the users models.
+
+4. Generate a users seeder file for the demo user.
+npx sequelize seed:generate --name demo-user
+
+5. Seed what is given and check in psql or postbird.
+npx dotenv sequelize db:seed:all
+
+Command to undo the seed files:
+npx dotenv sequelize db:seed:undo:all
