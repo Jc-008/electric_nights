@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     categoryId: DataTypes.STRING
   }, {});
   Event.associate = function(models) {
-    Event.belongTo(models.Category, {foreignKey: 'categoryId'})    // An event could have many categories
+    Event.belongsTo(models.Category, {foreignKey: 'categoryId'})    // An event could have many categories
   };
   return Event;
 };

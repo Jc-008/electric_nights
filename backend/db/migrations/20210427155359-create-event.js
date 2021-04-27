@@ -41,7 +41,7 @@ module.exports = {
         allowNull: false,
       },
       categoryId: {
-        type: Sequelize.STRING(25),
+        type: Sequelize.INTEGER,
         allowNull: false,
         references: {model: 'Categories'}             // referencing the category table
 

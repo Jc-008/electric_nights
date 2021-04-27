@@ -54,6 +54,7 @@ router.post(
   validateSignup,
   asyncHandler(async (req, res) => {
     const { email, password, username, location } = req.body;                       // am i able to grab the location from req.body ?
+    console.log(req.body,'-------------------------' )
     const user = await User.signup({ email, username, password, location});         // if so does that allow me to grab the location ?
 
     await setTokenCookie(res, user);
@@ -63,12 +64,6 @@ router.post(
     });
   }),
 );
-
-
-
-
-
-
 
 
 module.exports = router;

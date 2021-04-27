@@ -10,7 +10,7 @@ const REMOVE_USER = 'session/removeUser';
 const setUser = (user) => {
   return {
     type: SET_USER,
-    payload: user,
+    payload: user,              // can just use user, no need to specify payload
   };
 };
 
@@ -21,18 +21,19 @@ const removeUser = () => {
 };
 
 // phase 2: signup Form page------------------------------------------------------------------------------
-export const signup = (user) => async (dispatch) => {
-  const { username, email, password } = user;
-  const response = await csrfFetch("/api/users", {
+export const signup = (user) => async (dispatch) => {         // this is the thunk
+  const { username, email, password, location } = user;
+  const response = await csrfFetch("/api/users", {          // connect front to backend
     method: "POST",
     body: JSON.stringify({
       username,
       email,
       password,
+      location
     }),
   });
   const data = await response.json();
-  dispatch(setUser(data.user));
+  dispatch(setUser(data.user));               // dispatch the action of the data and change the store
   return response;
 };
 
@@ -57,8 +58,8 @@ const sessionReducer = (state = initialState, action) => {
   let newState;
   switch (action.type) {
     case SET_USER:
-      newState = Object.assign({}, state);
-      newState.user = action.payload;
+      newState = Object.assign({}, state);            // copy old state
+      newState.user = action.payload;               // key into the user and set to new payload
       return newState;
     case REMOVE_USER:
       newState = Object.assign({}, state);

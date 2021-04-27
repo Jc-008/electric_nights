@@ -18,6 +18,11 @@ module.exports = {
         allowNull: false,
         unique: true,
       },
+      location: {
+        type: Sequelize.STRING(25),
+        allowNull: false,
+        unique: true,
+      },
       hashedPassword: {
         type: Sequelize.STRING.BINARY,
         allowNull: false,
