@@ -19,3 +19,15 @@ Command to undo the seed files:
 npx dotenv sequelize db:seed:undo:all
 
 will be using env file with new info and sources.
+
+
+------ Using the new username and DB for my project------
+
+
+// Create new models for the new db that I had created and that was used
+npx sequelize model:generate --name Event --attributes "title:string,imageUrl:string,host:string,location:string,time:time,description:string,ticketPrice:integer,ticketCount:integer,categoryId:string"
+npx sequelize model:generate --name Category --attributes "edmGenre:string"
+
+
+// Creating the seeders for each table to grab from:
+npx sequelize seed:generate --name category-data

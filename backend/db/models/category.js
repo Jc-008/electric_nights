@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     edmGenre: DataTypes.STRING
   }, {});
   Category.associate = function(models) {
-    // associations can be defined here
+    Category.belongsTo(models.Event, {foreignKey: 'categoryId'})    // A category belong to one event, bc each event will only have 1 category
   };
   return Category;
 };
