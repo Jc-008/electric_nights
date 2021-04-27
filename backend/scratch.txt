@@ -31,3 +31,4 @@ npx sequelize model:generate --name Category --attributes "edmGenre:string"
 
 // Creating the seeders for each table to grab from:
 npx sequelize seed:generate --name category-data
+npx sequelize seed:generate --name event-data

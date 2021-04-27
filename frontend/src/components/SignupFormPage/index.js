@@ -10,6 +10,7 @@ function SignupFormPage() {
   const sessionUser = useSelector((state) => state.session.user);
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
+  const [location, setLocation] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState([]);
@@ -48,6 +49,15 @@ function SignupFormPage() {
         <input
           type="text"
           value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          required
+        />
+      </label>
+      <label>
+        Location
+        <input
+          type="text"
+          value={location}
           onChange={(e) => setUsername(e.target.value)}
           required
         />

@@ -3,9 +3,9 @@
 // backend/routes/api/users.js
 const express = require('express')
 const asyncHandler = require('express-async-handler');
-const { setTokenCookie, requireAuth } = require('../../utils/auth');
-const { User } = require('../../db/models');
 const { check } = require('express-validator');                               // importing the functions that were created
+const { setTokenCookie, requireAuth } = require('../../utils/auth');
+const { User } = require('../../db/models');                                // will need to add additional models
 const { handleValidationErrors } = require('../../utils/validation');         // importing the functions that were created
 
 const router = express.Router();
@@ -30,6 +30,9 @@ const validateSignup = [
     .not()
     .isEmail()
     .withMessage('Username cannot be an email.'),
+  check('location')
+    .isLength({ min: 3 })
+    .withMessage('Please provide a valid location with at least 3 characters.'),
   check('password')
     .exists({ checkFalsy: true })
     .isLength({ min: 6 })
@@ -50,8 +53,8 @@ router.post(
   '',
   validateSignup,
   asyncHandler(async (req, res) => {
-    const { email, password, username } = req.body;
-    const user = await User.signup({ email, username, password });
+    const { email, password, username, location } = req.body;                       // am i able to grab the location from req.body ?
+    const user = await User.signup({ email, username, password, location});         // if so does that allow me to grab the location ?
 
     await setTokenCookie(res, user);
 

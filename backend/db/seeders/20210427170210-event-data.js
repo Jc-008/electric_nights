@@ -12,14 +12,8 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-      return queryInterface.bulkInsert('Categories', [
-        {edmGenre:'House'},            //  1
-        {edmGenre:'DeepHouse'},        //  2
-        {edmGenre:'Techno'},           //  3
-        {edmGenre:'Trance'},           //  4
-        {edmGenre:'BigRoom'},          //  5
-        {edmGenre:'DubStep'},          //  6
-        {edmGenre:'Trap'}              //  7
+      return queryInterface.bulkInsert('Events', [          // will add event seeders once completed.
+
       ], {});
   },
 
@@ -31,6 +25,6 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('People', null, {});
     */
-    return queryInterface.bulkDelete('Categories', null, {});
+      return queryInterface.bulkDelete('Events', null, {});
   }
 };
