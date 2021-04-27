@@ -17,3 +17,5 @@ npx dotenv sequelize db:seed:all
 
 Command to undo the seed files:
 npx dotenv sequelize db:seed:undo:all
+
+will be using env file with new info and sources.
