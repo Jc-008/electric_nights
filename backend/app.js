@@ -23,7 +23,9 @@ app.use(express.json());            // express middleware to parse JSON body of 
 
 
 // Set the _csrf token and create req.csrfToken method ---------------------------------------------------------------------------------------
-app.use(                                    // NEED CSURF before routes (line 43)
+// comment out when testing
+
+app.use(                                    // NEED CSURF and will be used for EVERY SINGLE ROUTE
   csurf({                                                 // will add a _csrf cookie that is HTTP - ONLY (can't be read by JS)
     cookie: {
       secure: isProduction,
@@ -41,7 +43,7 @@ It also adds a method on all requests (req.csrfToken) that will be set to anothe
 */
 
 
-app.use(routes);             // connect all the routes
+app.use(routes);             // connect all the routes, with the middlewares used in place.
 
 
 /* -------------------------------------------------------------------------------------------------------------------------
