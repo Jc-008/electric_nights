@@ -40,7 +40,7 @@ module.exports = {
   categoryId:1
 },
 {
-  title:'The cosmic sounds of nishi neptune',
+  title:'The cosmic sounds of Nishi Neptune',
   imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619561032/Electric_Nights-pictures/picture20_yhj6bj.jpg',
   host:'SF Records',
   location:'Avenue',
@@ -252,7 +252,7 @@ module.exports = {
   title:'Hard and strong with Cloudfinity',
   imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619561033/Electric_Nights-pictures/picture17_zggx61.jpg',
   host:'Snare70 sounds',
-  location:'barcode',
+  location:'Barcode',
   time:faker.date.future(),
   description:faker.lorem.sentences(6),
   ticketPrice:35.00,
