@@ -1,20 +1,267 @@
 'use strict';
+// const { Random } = require("random-js")
+const faker = require("faker")
+// const random = new Random();
+
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    /*
-      Add altering commands here.
-      Return a promise to correctly handle asynchronicity.
 
-      Example:
-      return queryInterface.bulkInsert('People', [{
-        name: 'John Doe',
-        isBetaMember: false
-      }], {});
-    */
-      return queryInterface.bulkInsert('Events', [          // will add event seeders once completed.
+    // const randomDescription = () => {
+    //   const descriptions = [
+    //     "Great Dj from the europe ",
+    //     "A hobby shop looking for players to enjoy some good times!",
+    //     "Hobby shop look and feel!",
+    //     "complementary meatloaf made by my mom!",
+    //     "just frat guys who play dnd",
+    //     "place smells like hookah. pretty good",
+    //     "the lodge is great dor a dnd setting!",
+    //     "Come down to my mom's basement!",
+    //     "My therapist said I need friends!"
+    //   ]
+    //   return descriptions[random.integer(0, 10)]
 
-      ], {});
+    // }
+
+
+
+
+  return queryInterface.bulkInsert('Events', [          // will add event seeders once completed.
+
+{
+  title:'Deep and heavy sound presented by Alpha J ',
+  imageUrl:'taken from AWS',
+  host:'SF Records',
+  location:'Marquee',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:50.00,
+  ticketCount:300,
+  categoryId:1
+},
+{
+  title:'The cosmic sounds of nishi neptune',
+  imageUrl:'',
+  host:'SF Records',
+  location:'Avenue',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:35.00,
+  ticketCount:250,
+  categoryId:1
+},
+{
+  title:'Booming sounds presented by Nat Boom',
+  imageUrl:'',
+  host:'SF Records',
+  location:'Lavo',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:45.00,
+  ticketCount:250,
+  categoryId:5
+},
+{
+  title:'PurpleCraze with Bamm-bamm',
+  imageUrl:'',
+  host:'SF Records',
+  location:'Central bar lounge',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:35.00,
+  ticketCount:200,
+  categoryId:1
+},
+{
+  title:'Nero presented by U-Nice',
+  imageUrl:'',
+  host:'aA records',
+  location:'Mission NYC',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:45.00,
+  ticketCount:200,
+  categoryId:1
+},
+{
+  title:'Flying high with Mimi key',
+  imageUrl:'',
+  host:'HighFly Music',
+  location:'Webster Hall',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:30.00,
+  ticketCount:350,
+  categoryId:2
+},
+{
+  title:'Smooth waves presented by Josh Rhythm',
+  mageUrl:'',
+  host:'HighFly Music',
+  location:'Webster Hall',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:30.00,
+  ticketCount:350,
+  categoryId:2
+},
+{
+  title:'High beats with Deicide',
+  imageUrl:'',
+  host:'Rolling Records',
+  location:'House of Yes',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:30.00,
+  ticketCount:300,
+  categoryId:3
+},
+{
+  title:'The shaking waves of Kasper',
+  imageUrl:'',
+  host:'Rolling Records',
+  location:'Good Room',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:25.00,
+  ticketCount:250,
+  categoryId:3
+},
+{
+  title:'Future beats with Jaironetic',
+  imageUrl:'',
+  host:'Rolling Records',
+  location:'Caprice',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:25.00,
+  ticketCount:150,
+  categoryId:3
+},
+{
+  title:'The moving sounds of zero',
+  imageUrl:'',
+  host:'aA records',
+  location:'Bossa Nova Civic Club',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:25.00,
+  ticketCount:300,
+  categoryId:3
+},
+{
+  title:'Star lights with Comsmo T',
+  imageUrl:'',
+  host:'Rolling Records',
+  location:'Le Bain',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:30.00,
+  ticketCount:250,
+  categoryId:4
+},
+{
+  title:'Rolling beats with A-List ',
+  imageUrl:'',
+  host:'Rolling Records',
+  location:'Avant gardner',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:35.00,
+  ticketCount:500,
+  categoryId:4
+},
+{
+  title:'Lucid tunes of TD41',
+  imageUrl:'',
+  host:'Rolling Records',
+  location:'Output',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:45.00,
+  ticketCount:500,
+  categoryId:4
+},
+{
+  title:'GetHeady with Dj VM',
+  imageUrl:'',
+  host:'Big&Loud Music',
+  location:'1 Oak',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:45.00,
+  ticketCount:250,
+  categoryId:5
+},
+{
+  title:'Big and classics with Dj guny',
+  imageUrl:'',
+  host:'Big&Loud Music',
+  location:'Webster Hall',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:35.00,
+  ticketCount:350,
+  categoryId:5
+},
+{
+  title:'Pure drops and sound of Nat Boom',
+  imageUrl:'',
+  host:'Big&Loud Music',
+  ocation:'TAO downtown',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:40.00,
+  ticketCount:250,
+  categoryId:5
+},
+{
+  title:'The dope sounds of D0p3 Trekt',
+  imageUrl:'',
+  host:'Snare70 sounds',
+  location:'Mister East',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:25.00,
+  ticketCount:200,
+  categoryId:6
+},
+{
+  title:'Moving steps with Jeb Jax',
+  imageUrl:'',
+  host:'Snare70 sounds',
+  location:'46 Lounge',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:25.00,
+  ticketCount:150,
+  categoryId:6
+},
+{
+  title:'The Loud and strong beats of Bay blaze',
+  imageUrl:'',
+  host:'Snare70 sounds',
+  location:'Brooklyn Bowl',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:45.00,
+  ticketCount:400,
+  categoryId:7
+},
+{
+  title:'Hard and strong with Cloudfinity',
+  imageUrl:'',
+  host:'Snare70 sounds',
+  location:'barcode',
+  time:faker.date.future(),
+  description:faker.lorem.sentences(6),
+  ticketPrice:35.00,
+  ticketCount:300,
+  categoryId:7
+},
+
+    ], {});
+
   },
 
   down: (queryInterface, Sequelize) => {
