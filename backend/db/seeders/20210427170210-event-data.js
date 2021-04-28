@@ -30,7 +30,7 @@ module.exports = {
 
 {
   title:'Deep and heavy sound presented by Alpha J ',
-  imageUrl:'taken from AWS',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619561032/Electric_Nights-pictures/picture18_ndv47g.jpg',
   host:'SF Records',
   location:'Marquee',
   time:faker.date.future(),
@@ -41,7 +41,7 @@ module.exports = {
 },
 {
   title:'The cosmic sounds of nishi neptune',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619561032/Electric_Nights-pictures/picture20_yhj6bj.jpg',
   host:'SF Records',
   location:'Avenue',
   time:faker.date.future(),
@@ -52,7 +52,7 @@ module.exports = {
 },
 {
   title:'Booming sounds presented by Nat Boom',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619560975/Electric_Nights-pictures/picture6_ngstai.jpg',
   host:'SF Records',
   location:'Lavo',
   time:faker.date.future(),
@@ -63,7 +63,7 @@ module.exports = {
 },
 {
   title:'PurpleCraze with Bamm-bamm',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619561032/Electric_Nights-pictures/picture16_h1fsnl.jpg',
   host:'SF Records',
   location:'Central bar lounge',
   time:faker.date.future(),
@@ -74,7 +74,7 @@ module.exports = {
 },
 {
   title:'Nero presented by U-Nice',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619582438/Electric_Nights-pictures/picture22_pake9s.jpg',
   host:'aA records',
   location:'Mission NYC',
   time:faker.date.future(),
@@ -85,7 +85,7 @@ module.exports = {
 },
 {
   title:'Flying high with Mimi key',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619561031/Electric_Nights-pictures/picture13_zl52ky.jpg',
   host:'HighFly Music',
   location:'Webster Hall',
   time:faker.date.future(),
@@ -96,7 +96,7 @@ module.exports = {
 },
 {
   title:'Smooth waves presented by Josh Rhythm',
-  mageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619560976/Electric_Nights-pictures/picture9_e1rm9v.jpg',
   host:'HighFly Music',
   location:'Webster Hall',
   time:faker.date.future(),
@@ -107,7 +107,7 @@ module.exports = {
 },
 {
   title:'High beats with Deicide',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619582716/Electric_Nights-pictures/picture23_yf0spq.jpg',
   host:'Rolling Records',
   location:'House of Yes',
   time:faker.date.future(),
@@ -118,7 +118,7 @@ module.exports = {
 },
 {
   title:'The shaking waves of Kasper',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619582933/Electric_Nights-pictures/picture24_r9tdte.jpg',
   host:'Rolling Records',
   location:'Good Room',
   time:faker.date.future(),
@@ -129,7 +129,7 @@ module.exports = {
 },
 {
   title:'Future beats with Jaironetic',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619561032/Electric_Nights-pictures/picture19_byrfbu.jpg',
   host:'Rolling Records',
   location:'Caprice',
   time:faker.date.future(),
@@ -140,7 +140,7 @@ module.exports = {
 },
 {
   title:'The moving sounds of zero',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619560977/Electric_Nights-pictures/picture3_c9open.jpg',
   host:'aA records',
   location:'Bossa Nova Civic Club',
   time:faker.date.future(),
@@ -151,7 +151,7 @@ module.exports = {
 },
 {
   title:'Star lights with Comsmo T',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619583137/Electric_Nights-pictures/picture25_ucppqo.jpg',
   host:'Rolling Records',
   location:'Le Bain',
   time:faker.date.future(),
@@ -162,7 +162,7 @@ module.exports = {
 },
 {
   title:'Rolling beats with A-List ',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619583526/Electric_Nights-pictures/picture27_b50t2w.jpg',
   host:'Rolling Records',
   location:'Avant gardner',
   time:faker.date.future(),
@@ -173,7 +173,7 @@ module.exports = {
 },
 {
   title:'Lucid tunes of TD41',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619583376/Electric_Nights-pictures/picture26_zgr1uc.jpg',
   host:'Rolling Records',
   location:'Output',
   time:faker.date.future(),
@@ -184,7 +184,7 @@ module.exports = {
 },
 {
   title:'GetHeady with Dj VM',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619584494/Electric_Nights-pictures/picture31_hxblwi.jpg',
   host:'Big&Loud Music',
   location:'1 Oak',
   time:faker.date.future(),
@@ -195,7 +195,7 @@ module.exports = {
 },
 {
   title:'Big and classics with Dj guny',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619584253/Electric_Nights-pictures/picture30_bpkesf.jpg',
   host:'Big&Loud Music',
   location:'Webster Hall',
   time:faker.date.future(),
@@ -206,9 +206,9 @@ module.exports = {
 },
 {
   title:'Pure drops and sound of Nat Boom',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619584164/Electric_Nights-pictures/picture29_zhfo5q.jpg',
   host:'Big&Loud Music',
-  ocation:'TAO downtown',
+  location:'TAO downtown',
   time:faker.date.future(),
   description:faker.lorem.sentences(6),
   ticketPrice:40.00,
@@ -217,7 +217,7 @@ module.exports = {
 },
 {
   title:'The dope sounds of D0p3 Trekt',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619583969/Electric_Nights-pictures/picture28_c0n6d1.jpg',
   host:'Snare70 sounds',
   location:'Mister East',
   time:faker.date.future(),
@@ -228,7 +228,7 @@ module.exports = {
 },
 {
   title:'Moving steps with Jeb Jax',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619560975/Electric_Nights-pictures/picture7_nblksh.jpg',
   host:'Snare70 sounds',
   location:'46 Lounge',
   time:faker.date.future(),
@@ -239,7 +239,7 @@ module.exports = {
 },
 {
   title:'The Loud and strong beats of Bay blaze',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619560975/Electric_Nights-pictures/picture5_ydyobg.jpg',
   host:'Snare70 sounds',
   location:'Brooklyn Bowl',
   time:faker.date.future(),
@@ -250,7 +250,7 @@ module.exports = {
 },
 {
   title:'Hard and strong with Cloudfinity',
-  imageUrl:'',
+  imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619561033/Electric_Nights-pictures/picture17_zggx61.jpg',
   host:'Snare70 sounds',
   location:'barcode',
   time:faker.date.future(),
