@@ -2,7 +2,18 @@
 
 
 .eventPicture{
-  height: 200px;
+  height: 10rem;
   display:flex;
   flex-wrap: wrap;
+}
+
+.events-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.eventCard{
+  display: flex;
+  justify-content: center;
 }
