@@ -1,4 +1,4 @@
-.navBar {
+/* .navBar {
   display: flex;
   position: fixed;
   width: 100%;
@@ -7,3 +7,17 @@
   border-radius: 3px;
   justify-content: space-around;
 }
+ */
+
+
+ .logo-button{
+  display:flex;
+  /* flex-direction: row; */
+ }
+
+
+ .navbar-container{
+  display:flex;
+  background-color: lightpink;
+  /* flex-direction: row; */
+ }

@@ -10,7 +10,6 @@ const { Event, Category, User } = require('../../db/models');                   
 router.get('/', asyncHandler( async(req, res) => {
   const events = await Event.findAll()    // finding all events
   res.json(events)                        //
-  console.log('res.json with event passed in -----------------',res.json(events))
 }))
 
 module.exports = router;
