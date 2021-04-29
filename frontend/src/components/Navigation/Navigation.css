@@ -4,7 +4,7 @@
   grid-template-columns: repeat(12,1fr) ;
   background-color:rgba(0, 0, 0, 0.8);
   color:rgb(180, 178, 178);
-  min-height:75px;
+  min-height:65px;
   width: 100%;
 
   /* flex-direction: row; */
@@ -18,9 +18,11 @@
 
 
  .logo-button{
-   grid-column: 2/3;
+   grid-column: 1/2;
    text-decoration: none;
    color:rgb(180, 178, 178);
+   justify-content: center;
+   text-decoration: none;
  }
 
  .searchBar{
@@ -29,18 +31,18 @@
 
 
  .randomEventBtn-container{
-  grid-column: 8/9;
+  grid-column: 10/11;
  }
 
 
  .link-btn-container{
-  grid-column: 10/13;
+  grid-column: 11/13;
  }
 
 
 
-/*
+
  .link-btn-container .LogInBtn-container,
  .link-btn-container .signInBtn-container {
-  padding-left: 30px;
- } */
+  padding-left: 80px;
+ }

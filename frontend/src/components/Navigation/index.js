@@ -52,7 +52,7 @@ function Navigation({ isLoaded }){
   return (              // building blocks of the html below , logic above ^            // want [ logo        searchbar                 randomEventBTN        signinBTN  ]
     <div className={'navbar-container'}>
       <div className={'logo-button'}>
-        <NavLink exact to="/">Electric Nights</NavLink>
+        <NavLink className='logo-name' exact to="/">Electric Nights</NavLink>
       </div>
 
       <div className={'searchBar'}>
@@ -65,11 +65,11 @@ function Navigation({ isLoaded }){
 
       <div className='link-btn-container'>
         <div className={'LogInBtn-container'}>
-          <LogInBtn/>
+          <LoginFormModal/>
         </div>
 
         <div className={'signInBtn-container'}>
-          <SignUpBtn/>
+          <SignUpFormModal/>
         </div>
       </div>
 
