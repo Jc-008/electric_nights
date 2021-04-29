@@ -8,6 +8,7 @@ import Navigation from "./components/Navigation";
 import UserHomePage from './components/UserHomePage';
 import LandingPage from "./components/LandingPage";
 import EventDetails from './components/Events/EventDetails';
+import Footer from './components/Footer/'
 
 function App() {
   const dispatch = useDispatch();
@@ -38,6 +39,7 @@ function App() {
           </Route>
         </Switch>
       )}
+      <Footer/>
     </>
   );
 }
