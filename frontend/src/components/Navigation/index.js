@@ -37,14 +37,21 @@ function Navigation({ isLoaded }){
 
   if (sessionUser) {            // if session is logged in, then show profile button
     sessionLinks = (
-      <ProfileButton user={sessionUser} />                                          // using the profile button component here
+      <ProfileButton user={sessionUser} />                  // using the profile button component here
     );
   } else {                  // else, show login and signup buttons instead
     sessionLinks = (
       <>
-        <LoginFormModal />
-        <SignUpFormModal/>
+        <div className='link-btn-container'>
+        <div className={'LogInBtn-container'}>
+          <LoginFormModal/>
+        </div>
+
+        <div className={'signInBtn-container'}>
+          <SignUpFormModal/>
+        </div>
         {/* <NavLink to="/signup">Sign Up</NavLink> */}
+        </div>
       </>
     );
   }
@@ -62,19 +69,18 @@ function Navigation({ isLoaded }){
       <div className={'randomEventBtn-container'}>
         <h3 onClick={getRandomEvent}>Random Btn </h3>
       </div>
-
-      <div className='link-btn-container'>
+      {sessionLinks}
+      {/* <div className='link-btn-container'>
         <div className={'LogInBtn-container'}>
           <LoginFormModal/>
         </div>
 
         <div className={'signInBtn-container'}>
           <SignUpFormModal/>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
 
     </div>
-
   );
 
   // Original code below:
