@@ -17,3 +17,28 @@
   display: flex;
   justify-content: center;
 }
+
+#current-event_picture{
+  width: 675px;
+}
+
+
+.picture_info-container{
+  display:flex;
+}
+
+
+/* .event-Page-location{
+  display:flex; */
+  /* flex-direction */
+/* } */
+
+.currentImg-div{
+float: left
+}
+
+
+.event-page-details{
+ text-align: right;
+ vertical-align: text-top;
+}
