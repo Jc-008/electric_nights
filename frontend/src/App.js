@@ -8,7 +8,8 @@ import Navigation from "./components/Navigation";
 import UserHomePage from './components/UserHomePage';
 import LandingPage from "./components/LandingPage";
 import EventDetails from './components/Events/EventDetails';
-import Footer from './components/Footer/'
+import Footer from './components/Footer/';
+import NavBar from './components/NavBar/index';
 
 function App() {
   const dispatch = useDispatch();
@@ -23,6 +24,7 @@ function App() {
       {isLoaded && (
         <Switch>
           <Route exact path='/'>
+            {/* <NavBar/> */}
             <LandingPage />
           </Route>
 

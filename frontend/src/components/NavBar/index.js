@@ -1,17 +1,16 @@
-// frontend/src/components/Navigation/index.js
 import {useEffect} from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import ProfileButton from './ProfileButon';
+import ProfileButton from '../Navigation/ProfileButon';
 import LoginFormModal from '../LoginFormModal';
 import SearchBar from '../SearchBar';
 import RandomEvent from '../RandomEvent';
 import LogInBtn from '../LogInBtn';
 import SignUpBtn from '../SignUpBtn';
 import {getEvents} from '../../store/event'
-import './Navigation.css';
+import '../NavBar/NavBar.css';
 
-function Navigation({ isLoaded }){
+function NavBar(){
   const sessionUser = useSelector(state => state.session.user);
   const events = useSelector(state => state.events);        // pull content out of state
   const dispatch = useDispatch();
@@ -61,29 +60,16 @@ function Navigation({ isLoaded }){
         <h3 onClick={getRandomEvent}>Random Btn </h3>
       </div>
 
-      <div className='link-btn-container'>
-        <div className={'LogInBtn-container'}>
-          <LogInBtn/>
-        </div>
+      <div className={'signInBtn-container'}>
+        <LogInBtn/>
+      </div>
 
-        <div className={'signInBtn-container'}>
-          <SignUpBtn/>
-        </div>
+      <div className={'signInBtn-container'}>
+        <SignUpBtn/>
       </div>
 
     </div>
-
   );
-
-  // Original code below:
-  // return (              // building blocks of the html below , logic above ^
-  //   <ul>
-  //     <li>
-  //       <NavLink exact to="/">Home</NavLink>
-  //       {isLoaded && sessionLinks}
-  //     </li>
-  //   </ul>
-  // );
 }
 
-export default Navigation;
+export default NavBar;
