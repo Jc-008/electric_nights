@@ -5,7 +5,7 @@ import { Redirect } from "react-router-dom";
 import * as sessionActions from "../../store/session";
 import './SignupForm.css';
 
-function SignupFormPage() {
+function SignUpForm() {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);
   const [email, setEmail] = useState("");
@@ -14,8 +14,12 @@ function SignupFormPage() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState([]);
+  console.log('hello to everyone----------------------')
 
-  if (sessionUser) return <Redirect to="/" />;
+  if (sessionUser) {
+    console.log('Usersession if block !!!!!!----------')
+    return <Redirect to="/" />;
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -87,4 +91,4 @@ function SignupFormPage() {
   );
 }
 
-export default SignupFormPage;
+export default SignUpForm;

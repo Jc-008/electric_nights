@@ -20,6 +20,7 @@ export const getEvents = () => async dispatch => {    // getEvent is the thunk g
 }
 
 
+//----------Reducer ----------------------------------------------------------------------------------------//
 export default function eventsReducer (state = {}, action) {      // reducers manages change state in an application
   switch (action.type) {
     case GET_EVENTS: {

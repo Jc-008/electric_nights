@@ -1,18 +1,16 @@
-// frontend/src/components/Navigation/index.js
 import {useEffect} from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import ProfileButton from './ProfileButon';
+import ProfileButton from '../Navigation/ProfileButon';
 import LoginFormModal from '../LoginFormModal';
-import SignUpFormModal from '../SignupFormModal';
 import SearchBar from '../SearchBar';
 import RandomEvent from '../RandomEvent';
 import LogInBtn from '../LogInBtn';
 import SignUpBtn from '../SignUpBtn';
 import {getEvents} from '../../store/event'
-import './Navigation.css';
+import '../NavBar/NavBar.css';
 
-function Navigation({ isLoaded }){
+function NavBar(){
   const sessionUser = useSelector(state => state.session.user);
   const events = useSelector(state => state.events);        // pull content out of state
   const dispatch = useDispatch();
@@ -37,21 +35,13 @@ function Navigation({ isLoaded }){
 
   if (sessionUser) {            // if session is logged in, then show profile button
     sessionLinks = (
-      <ProfileButton user={sessionUser} />                  // using the profile button component here
+      <ProfileButton user={sessionUser} />                                          // using the profile button component here
     );
   } else {                  // else, show login and signup buttons instead
     sessionLinks = (
       <>
-        <div className='link-btn-container'>
-        <div className={'LogInBtn-container'}>
-          <LoginFormModal/>
-        </div>
-
-        <div className={'signInBtn-container'}>
-          <SignUpFormModal/>
-        </div>
-        {/* <NavLink to="/signup">Sign Up</NavLink> */}
-        </div>
+        <LoginFormModal />
+        <NavLink to="/signup">Sign Up</NavLink>
       </>
     );
   }
@@ -59,7 +49,7 @@ function Navigation({ isLoaded }){
   return (              // building blocks of the html below , logic above ^            // want [ logo        searchbar                 randomEventBTN        signinBTN  ]
     <div className={'navbar-container'}>
       <div className={'logo-button'}>
-        <NavLink className='logo-name' exact to="/">Electric Nights</NavLink>
+        <NavLink exact to="/">Electric Nights</NavLink>
       </div>
 
       <div className={'searchBar'}>
@@ -69,29 +59,17 @@ function Navigation({ isLoaded }){
       <div className={'randomEventBtn-container'}>
         <h3 onClick={getRandomEvent}>Random Btn </h3>
       </div>
-      {sessionLinks}
-      {/* <div className='link-btn-container'>
-        <div className={'LogInBtn-container'}>
-          <LoginFormModal/>
-        </div>
 
-        <div className={'signInBtn-container'}>
-          <SignUpFormModal/>
-        </div> */}
-      {/* </div> */}
+      <div className={'signInBtn-container'}>
+        <LogInBtn/>
+      </div>
+
+      <div className={'signInBtn-container'}>
+        <SignUpBtn/>
+      </div>
 
     </div>
   );
-
-  // Original code below:
-  // return (              // building blocks of the html below , logic above ^
-  //   <ul>
-  //     <li>
-  //       <NavLink exact to="/">Home</NavLink>
-  //       {isLoaded && sessionLinks}
-  //     </li>
-  //   </ul>
-  // );
 }
 
-export default Navigation;
+export default NavBar;
