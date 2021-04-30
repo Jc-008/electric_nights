@@ -6,18 +6,20 @@ const REGISTER_EVENTS = 'events/REGISTER_EVENTS'
 
 const setEvents = events => ({                      // action, just returns an OBJECT
   type : GET_EVENTS,
-  events,               // no need to use payload, which is also the object
+  payload:events,               // no need to use payload, which is also the object
 })
 
 const registerEvent = events => ({
   type: REGISTER_EVENTS,
-  events,
+  payload: events,
 })
 
 
 
 
-// ------------------------------------------THUNKS---------------------------------------------------------------//
+
+
+// ------------------------------------------THUNKS (async Actions)---------------------------------------------------------------//
 
 // get all EVENTS
 export const getEvents = () => async dispatch => {    // getEvent is the thunk goes and gets data then dispatches the action
@@ -36,7 +38,10 @@ export const getEvents = () => async dispatch => {    // getEvent is the thunk g
 // }
 
 
+
+
 //--------------------------------------------Reducer --------------------------------------------------------------//
+
 export default function eventsReducer (state = {}, action) {      // reducers manages change state in an application
   switch (action.type) {
     case GET_EVENTS: {
