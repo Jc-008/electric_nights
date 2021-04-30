@@ -57,13 +57,27 @@
  }
 
 
- .profile-btn{
+ .profile-btn-container{
+  width: inherit;
+  /* background-color: cadetblue; */
+  display: flex;
+ }
+
+
+ /* .profile-btn{
   background-color: red;
   border-radius: 5px;
   width: 18px;
  }
+ */
 
 
- .fas .fa-user-circle{
-  width: 50px;
+
+ i{
+  width:inherit;
+  font-size: 35px;
+  justify-content:end;
+  grid-column: 11/12;
+  display: flex;
+
  }

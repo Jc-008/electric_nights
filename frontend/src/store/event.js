@@ -58,9 +58,9 @@ export default function eventsReducer (state = {}, action) {      // reducers ma
 
       return newState;                    // get put into the store
     }
-    case REGISTER_EVENTS {
-      newState = {...state}
-    }
+    // case REGISTER_EVENTS {
+    //   newState = {...state}
+    // }
 
     default : return state;                 // return newState (how it already is) if the case if not found.
   }
