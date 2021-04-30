@@ -9,7 +9,7 @@ const setEvents = events => ({                      // action, just returns an O
   events,               // no need to use payload, which is also the object
 })
 
-const registerEvent = events => ({
+const registerEvent = events => ({            // want to create register events but gotta make sure this is correct
   type: REGISTER_EVENTS,
   events,
 })
@@ -17,7 +17,7 @@ const registerEvent = events => ({
 
 
 
-// ------------------------------------------THUNKS---------------------------------------------------------------//
+// ------------------------------------------THUNKS(async actions)---------------------------------------------------------------//
 
 // get all EVENTS
 export const getEvents = () => async dispatch => {    // getEvent is the thunk goes and gets data then dispatches the action
