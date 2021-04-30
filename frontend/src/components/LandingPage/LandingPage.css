@@ -3,15 +3,25 @@
 }
 
 .frontPage-picture-container{
-  width: 97%;
+  width: 100%;
   border: blue solid 2px;
-  object-fit: cover;
+  /* object-fit: cover; */
+  display:flex;
+  justify-content: center;
 }
 
 
 .frontPage-Picture{
-width: 100vw;
+/* width: 100vw;
 /* object-fit: cover; */
-  height: 450px;
-  width: 95vw;
+  /* height: 450px; */
+  /* width: 95vw;  */
+  display: block;
+  /* max-width:900px;
+  max-height:400px; */
+  /* width: 95%;
+  height: 500px; */
+  width: auto;
+  height:550px;
+  justify-content: center;
 }

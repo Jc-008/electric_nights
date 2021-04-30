@@ -8,7 +8,9 @@ function LandingPage () {
   return (        // below the return will show on screen html wise, logic above^
     <div>
       <div className='frontPage-picture-container'>
-        <img className='frontPage-Picture' src="https://res.cloudinary.com/dwus7ia33/image/upload/v1619561031/Electric_Nights-pictures/picture15_vlxzkm.jpg" alt=""/>
+        <img className='frontPage-Picture' src="https://res.cloudinary.com/dwus7ia33/image/upload/v1619758431/Electric_Nights-pictures/picture14_ultone.jpg" alt="Electric Nights Logo"/>
+        {/* <img className='frontPage-Picture' src="https://res.cloudinary.com/dwus7ia33/image/upload/v1619758173/Electric_Nights-pictures/picture15_vlxzkm.jpg" alt="Electric Nights Logo"/> */}
+        {/* <img className='frontPage-Picture' src="https://res.cloudinary.com/dwus7ia33/image/upload/v1619757445/Electric_Nights-pictures/Picture32_gncjds.jpg" alt="Electric Nights Logo"/> */}
       </div>
       <h1>Landing page when not signed in</h1>
 
