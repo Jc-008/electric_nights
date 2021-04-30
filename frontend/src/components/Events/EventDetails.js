@@ -5,15 +5,16 @@ import './Events.css';
 
 
 const EventDetails = () => {
-  const id = (useParams().id);      // grabs the id from use params
+  const id = (useParams().id);      // grabs the id of the event from use params
+  // const sessionUser = useSelector(state => state.session.user);
   const event = useSelector(state => state.events[id] );
-  console.log(event, 'event printed-------------')
+  const {Users} = event
+  // console.log(Users, 'this is the first element of the array  ---------') ;
+
   if (!event) return null;
 
-  // check for register button based on on the event console log.
-  // dont show if registered .
-  // logic and condition used with {} will be rendered above the return
-  // both
+  const registered = Users.find(id => id !== undefined)
+
 
   return (
     <div className='picture_info-container'>
@@ -30,6 +31,9 @@ const EventDetails = () => {
         <div className='event-Page-location'>
           {event.location}
         </div>
+      </div>
+      <div>
+        {!registered ?  <button className='register-Btn'> Register</button> : null}
       </div>
     </div>
   )

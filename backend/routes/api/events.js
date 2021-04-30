@@ -19,19 +19,19 @@ router.get('/', asyncHandler( async(req, res) => {
 
 
 
-// ------- post------------------------------------------------------------------------//
+// ------- POST------------------------------------------------------------------------//
 
-// //localhost:3000 - will need to add an new instance
-// router.post('/:id', asyncHandler( async(req, res) => {
-//   const {userId, eventId } = req.body
-//   console.log(userId)
-//   console.log(eventId)
+// //localhost:3000/events/id
+// Creating a registration for an EVENT
+router.post('/:id', asyncHandler( async(req, res) => {        // do i need require Auth here or bad for testing?
+  const {userId, eventId } = req.body
+  // console.log(userId)
+  // console.log(eventId)
 
-
-
-
-//   res.json(events)                        //
-// }))
+  const registerEvent = await UserEvent.create({userId, eventId})          // created a new instance of userId and eventId on userEvent table
+  const event = await Event.findByPk(eventId)                           // will find an event based on a key of the eventId #
+  res.json(events)                        //
+}))
 
 
 module.exports = router;
