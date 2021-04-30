@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  height: 350px;
+  height: 275px;
   background-color: #f7f6f6;
   /* border: gray solid 5px; */
   padding: 0px 50px;
@@ -25,19 +25,19 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 
 .motto-top{
-  font-size: 36px;
+  font-size: 32px;
   line-height: 62px;
   display: flex;
   align-items: center;
 }
 
 .motto-bottom{
-  font-size: 45px;
+  font-size: 40px;
   line-height: 62px;
   font-weight: 800;
   display: flex;
@@ -48,7 +48,7 @@
 .frontPage-Picture{
   display: block;
   width: auto;
-  height: 500px;
+  height: 425px;
   /* margin-left: 200px; */
   justify-content: center;
 }

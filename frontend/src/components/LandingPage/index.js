@@ -11,9 +11,8 @@ function LandingPage () {
         <div className='motto-container'>
           <div className='motto-inner-container'>
             <div className='motto-top'>Discover the best</div>
-            <div className='motto-bottom'>EDM events tonight</div>
+            <div className='motto-bottom'>EDM events today!</div>
           </div>
-
         </div>
 
         <img className='frontPage-Picture' src="https://res.cloudinary.com/dwus7ia33/image/upload/v1619758431/Electric_Nights-pictures/picture14_ultone.jpg" alt="Electric Nights Logo"/>
