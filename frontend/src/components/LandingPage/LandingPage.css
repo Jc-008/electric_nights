@@ -2,16 +2,53 @@
   height:300px;
 }
 
-.frontPage-picture-container{
-  width: 97%;
+.frontPage-banner-container{
+  width: 100%;
   border: blue solid 2px;
-  object-fit: cover;
+  /* object-fit: cover; */
+  display:flex;
+  justify-content: center;
+}
+
+
+.motto-container{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 275px;
+  background-color: #f7f6f6;
+  /* border: gray solid 5px; */
+  padding: 0px 50px;
+}
+
+.motto-inner-container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 70px;
+}
+
+
+.motto-top{
+  font-size: 32px;
+  line-height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.motto-bottom{
+  font-size: 40px;
+  line-height: 62px;
+  font-weight: 800;
+  display: flex;
+  /* margin-top: 100px; */
 }
 
 
 .frontPage-Picture{
-width: 100vw;
-/* object-fit: cover; */
-  height: 450px;
-  width: 95vw;
+  display: block;
+  width: auto;
+  height: 425px;
+  /* margin-left: 200px; */
+  justify-content: center;
 }
