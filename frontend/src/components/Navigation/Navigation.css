@@ -2,8 +2,10 @@
  .navbar-container{
   display:grid;
   grid-template-columns: repeat(12,1fr) ;
-  background-color:rgba(0, 0, 0, 0.8);
-  color:rgb(180, 178, 178);
+  /* background-color:rgba(41,39,41, 0.8);
+  color:rgb(180, 178, 178); */
+  background-color: white;
+  color:#111111;
   min-height:65px;
   width: 100%;
 
@@ -19,10 +21,17 @@
 
  .logo-button{
    grid-column: 1/2;
-   text-decoration: none;
-   color:rgb(180, 178, 178);
    justify-content: center;
-   text-decoration: none;
+ }
+
+ .logo-name{
+  /* color:rgb(180, 178, 178); */
+  color:#111111;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0px 35px;
  }
 
  .searchBar{
@@ -44,5 +53,5 @@
 
  .link-btn-container .LogInBtn-container,
  .link-btn-container .signInBtn-container {
-  padding-left: 80px;
+  padding-left: 70px;
  }

@@ -3,15 +3,11 @@
 
 const RandomEvent = () => {
 
-
-
-
   return (
-    <div>
-      <h3>Random Btn </h3>
+    <div className='randomEventBtn-container'>
+      <h3>Randomize Event </h3>
     </div>
   )
-
 
 }
 

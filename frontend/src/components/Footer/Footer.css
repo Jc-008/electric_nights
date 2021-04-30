@@ -1,8 +1,10 @@
 .footer-container {
   display: flex;
   justify-content: space-between;
-  background-color:rgba(0, 0, 0, 0.8);
-  color:rgb(180, 178, 178);
+  /* background-color:rgba(41,39,41, 0.8); */
+  /* color:rgb(225,223,217); */
+  background-color: white;
+  color:#111111;
   height: 45px;
   width: 96%;
   align-items: center;
@@ -27,8 +29,10 @@
   display:flex;
   text-decoration: none;
   font-size: 20px;
-  color:rgb(180, 178, 178);
+  /* color:rgb(180, 178, 178); */
+  color:#111111;
   margin-left: 6px;
+  font-weight: bold;
 }
 
 
@@ -37,5 +41,7 @@
   align-items: center;
   text-decoration: none;
   font-size: 20px;
-  color:rgb(180, 178, 178);
+  /* color:rgb(180, 178, 178); */
+  color:#111111;
+  font-weight: bold;
 }

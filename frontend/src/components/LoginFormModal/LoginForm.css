@@ -1,0 +1,30 @@
+.loginForm{
+  background-color: #d3d3d3;
+  width: 245px;
+  /* height: 475px; */
+  padding: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+.login-btn{
+  border-radius: 3px;
+  font-weight: 800;
+  padding: 10px 55px;
+  margin-top: 20px;
+  /* transition: background-color .5s,border .5s, color .5; */
+  transition: background-color 1s,border .5s,color 1.5s;
+}
+
+
+.login-btn:hover {
+  background-color: purple;
+  border: 2px solid white;
+  color: white;
+}
+
+.login-wording{
+  font-weight: bold;
+  font-size: 20px;
+}

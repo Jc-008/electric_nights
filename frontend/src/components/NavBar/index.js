@@ -57,7 +57,7 @@ function NavBar(){
       </div>
 
       <div className={'randomEventBtn-container'}>
-        <h3 onClick={getRandomEvent}>Random Btn </h3>
+        <h3 onClick={getRandomEvent}>Randomize Event</h3>
       </div>
 
       <div className={'signInBtn-container'}>

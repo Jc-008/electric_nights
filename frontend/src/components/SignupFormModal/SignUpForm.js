@@ -36,7 +36,7 @@ function SignUpForm() {
 
   return (
     <div className={'signup-container'}>
-      <form onSubmit={handleSubmit}>
+      <form className='signupForm' onSubmit={handleSubmit}>
         <ul>
           {errors.map((error, idx) => <li key={idx}>{error}</li>)}
         </ul>
@@ -85,7 +85,7 @@ function SignUpForm() {
             required
           />
         </label>
-        <button type="submit">Sign Up</button>
+        <button className='signup-btn' type="submit">Sign Up</button>
       </form>
     </div>
   );

@@ -1,12 +1,43 @@
 /* TODO Add site wide styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Space+Mono&display=swap');
 
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  /* background-color: #EAE7DC; */
 }
+
+
+/* body{
+  background-color: #EAE7DC;
+} */
 
 
 /* :root {
   --shadow: #D3D3D3;
   --background: gray;
 } */
+
+
+/* --------------------------------For Modals -------------------------------------------------- */
+/* form {
+  background-color: #d3d3d3;
+  width: 245px;
+  height: 260px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 5px;
+} */
+
+
+input {
+  border: 0;
+  border-radius: 3px;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  background-color: #f7f6f6;
+  width: 100%;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+}
