@@ -2,7 +2,7 @@
   height:300px;
 }
 
-.frontPage-picture-container{
+.frontPage-banner-container{
   width: 100%;
   border: blue solid 2px;
   /* object-fit: cover; */
@@ -11,17 +11,44 @@
 }
 
 
+.motto-container{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 350px;
+  background-color: #f7f6f6;
+  /* border: gray solid 5px; */
+  padding: 0px 50px;
+}
+
+.motto-inner-container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 100px;
+}
+
+
+.motto-top{
+  font-size: 36px;
+  line-height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.motto-bottom{
+  font-size: 45px;
+  line-height: 62px;
+  font-weight: 800;
+  display: flex;
+  /* margin-top: 100px; */
+}
+
+
 .frontPage-Picture{
-/* width: 100vw;
-/* object-fit: cover; */
-  /* height: 450px; */
-  /* width: 95vw;  */
   display: block;
-  /* max-width:900px;
-  max-height:400px; */
-  /* width: 95%;
-  height: 500px; */
   width: auto;
-  height:550px;
+  height: 500px;
+  /* margin-left: 200px; */
   justify-content: center;
 }

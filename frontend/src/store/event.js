@@ -31,9 +31,9 @@ export const getEvents = () => async dispatch => {    // getEvent is the thunk g
 }
 
 // Register EVENT
-export const registerEvent = () => async dispatch => {
-  const response = await csrfFetch('/api/events/')
-}
+// export const registerEvent = () => async dispatch => {
+//   const response = await csrfFetch('/api/events/')
+// }
 
 
 //--------------------------------------------Reducer --------------------------------------------------------------//
