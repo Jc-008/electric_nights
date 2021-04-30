@@ -1,15 +1,4 @@
- /* .signup-container {
-  display:flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height:400px;
-  width: 400px;
-  background-color:white;
-} */
-
-
-.signupForm{
+.loginForm{
   background-color: #d3d3d3;
   width: 245px;
   /* height: 475px; */
@@ -19,7 +8,7 @@
 }
 
 
-.signup-btn{
+.login-btn{
   border-radius: 3px;
   font-weight: 800;
   padding: 10px 55px;

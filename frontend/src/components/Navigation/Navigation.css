@@ -19,10 +19,14 @@
 
  .logo-button{
    grid-column: 1/2;
-   text-decoration: none;
-   color:rgb(180, 178, 178);
    justify-content: center;
-   text-decoration: none;
+ }
+
+ .logo-name{
+  color:rgb(180, 178, 178);
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
  }
 
  .searchBar{

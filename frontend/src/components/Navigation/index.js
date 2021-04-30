@@ -67,7 +67,7 @@ function Navigation({ isLoaded }){
       </div>
 
       <div className={'randomEventBtn-container'}>
-        <h3 onClick={getRandomEvent}>Random Btn </h3>
+        <h3 onClick={getRandomEvent}>Randomize Event</h3>
       </div>
       {sessionLinks}
       {/* <div className='link-btn-container'>
