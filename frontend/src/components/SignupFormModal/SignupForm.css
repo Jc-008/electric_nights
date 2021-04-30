@@ -25,4 +25,17 @@
   padding: 10px 55px;
   margin-top: 20px;
   transition: background-color .5s,border .5s,color .5s;
+
+}
+
+.signup-btn:hover {
+  background-color: #C1C8E4;
+  border: 2px solid white;
+  color: white;
+}
+
+
+.signup-wording{
+  font-weight: bold;
+  font-size: 20px;
 }
