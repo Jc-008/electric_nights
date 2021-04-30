@@ -25,6 +25,7 @@ export const getEvents = () => async dispatch => {    // getEvent is the thunk g
 
   if (response.ok) {
     const data = await response.json();
+
     dispatch(setEvents(data));         // dispatch to change a state for what is invoked inside
                                           // no need to key in because no object on backend
   }

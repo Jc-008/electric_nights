@@ -8,7 +8,9 @@ const { Event, Category, User } = require('../../db/models');                   
 
 // localhost:5000/ - homepage, will load if NO issues
 router.get('/', asyncHandler( async(req, res) => {
-  const events = await Event.findAll()    // finding all events
+  const events = await Event.findAll({
+    include: {model:User}
+  })    // finding all events
   res.json(events)                        //
 }))
 

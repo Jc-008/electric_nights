@@ -55,3 +55,15 @@
  .link-btn-container .signInBtn-container {
   padding-left: 70px;
  }
+
+
+ .profile-btn{
+  background-color: red;
+  border-radius: 5px;
+  width: 18px;
+ }
+
+
+ .fas .fa-user-circle{
+  width: 50px;
+ }

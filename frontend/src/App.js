@@ -8,8 +8,10 @@ import Navigation from "./components/Navigation";
 import UserHomePage from './components/UserHomePage';
 import LandingPage from "./components/LandingPage";
 import EventDetails from './components/Events/EventDetails';
-import Footer from './components/Footer/';
 import NavBar from './components/NavBar/index';
+import ProfilePage from './components/ProfilePage/index'
+import Footer from './components/Footer/';
+
 
 function App() {
   const dispatch = useDispatch();
@@ -36,9 +38,10 @@ function App() {
             <EventDetails />
           </Route>
 
-          {/* <Route path="/signup">
-            <SignUpFormModal />
-          </Route> */}
+          <Route path='Profile'>
+            <ProfilePage />
+          </Route>
+
         </Switch>
       )}
       <Footer/>
