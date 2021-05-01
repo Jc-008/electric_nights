@@ -55,3 +55,30 @@
  .link-btn-container .signInBtn-container {
   padding-left: 70px;
  }
+
+
+ .profile-btn-container{
+  width: inherit;
+  /* background-color: cadetblue; */
+  display: flex;
+  /* justify-content: end; */
+ }
+
+
+ /* .profile-btn{
+  background-color: red;
+  border-radius: 5px;
+  width: 18px;
+ }
+ */
+
+
+
+ i{
+  grid-column: 11/12;
+  display: flex;
+  width:inherit;
+  font-size: 35px;
+  justify-content:flex-end;
+
+ }

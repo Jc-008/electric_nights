@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import './Events.css'
 
 const EventCard = ({event}) => {
-  console.log(event)
+  // console.log(event)
 
   return (
     <Link to={`/event/${event.id}`}>
