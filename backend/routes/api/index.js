@@ -9,6 +9,7 @@ router.use('/session', sessionRouter);            // connects the session page t
 router.use('/users', usersRouter);                // connects the users page to here
 router.use('/events', eventRouter);               // connects the events page to here
 router.use('/search', searchRouter);
+//       api/search
 
 
 // // POST /api/test

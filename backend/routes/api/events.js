@@ -20,8 +20,8 @@ router.get('/', asyncHandler( async(req, res) => {
 
 
 // ------- POST------------------------------------------------------------------------//
-
-// //localhost:3000/events/
+// 5000 bc backend
+// //localhost:5000/events/
 // Creating a registration for an EVENT
 router.post('/', asyncHandler( async(req, res) => {        // do i need require Auth here or bad for testing?
   const {userId, eventId } = req.body

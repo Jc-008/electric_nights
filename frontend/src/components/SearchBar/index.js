@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import {searchFunc} from '../../store/search'
 import './SearchBar.css';
 
 
@@ -11,6 +12,8 @@ const SearchBar = () => {
 
   let handleSubmit = (e) => {
     e.preventDefault();
+    dispatch(searchFunc(searchTerm));
+    history.push('/');        // will redirect to search page after
   }
 
   return(

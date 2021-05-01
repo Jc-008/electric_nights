@@ -9,7 +9,7 @@ function Footer(){
     <nav>
       <div className='footer-container'>
         <div className='gitHub-div'>
-          <i class="fab fa-github"></i>
+          <i className="fab fa-github"></i>
           <a className='gitHub-text' target='_blank' href="https://github.com/Jc-008">GitHub</a>
         </div>
         <a className="wiki-text" target='_blank' href="https://github.com/Jc-008/electric_nights/wiki">EN Wiki</a>

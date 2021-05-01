@@ -16,7 +16,7 @@ export const searchFunc = (param) => async dispatch => {      // param is the se
                                       // /api/search/A-List
   if (response.ok) {
     const searchResults = await response.json();    // jsonifed  searchResult, litterally
-    dispatch(load(searchResults))
+    dispatch(loadResult(searchResults))
     return searchResults;
   }
 }

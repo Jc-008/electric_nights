@@ -9,7 +9,7 @@ const EventList = () => {
 
   return (
     <div className='events-container'>
-      {events.map(event => <div className='eventCard'> <EventCard key={event.id} event = {event}/></div>)}
+      {events.map(event => <div key={event.id} className='eventCard'> <EventCard  event = {event}/></div>)}
     </div>
   )
 }
