@@ -3,11 +3,12 @@ const router = require('express').Router();
 const sessionRouter = require('./session.js');
 const usersRouter = require('./users.js');
 const eventRouter = require('./events.js');       // importing everything on the events.js page as eventsRouter
+const searchRouter = require('./search.js')
 
 router.use('/session', sessionRouter);            // connects the session page to here
 router.use('/users', usersRouter);                // connects the users page to here
 router.use('/events', eventRouter);               // connects the events page to here
-
+router.use('/search', searchRouter);
 
 
 // // POST /api/test
