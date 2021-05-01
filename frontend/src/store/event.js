@@ -32,16 +32,17 @@ export const getEvents = () => async dispatch => {    // getEvent is the thunk g
 }
 
 // Register EVENT
-export const registerCurrentEvent = (data) => async dispatch => {
-  // const id =
-  const response = await csrfFetch(`/api/events/${data.id}`, {
+export const registerCurrentEvent = (userEvent) => async dispatch => {
+
+  const response = await csrfFetch('/api/events', {
     method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body:JSON.Stringify(data)                           // stringify the data that was
+    // headers: {'Content-Type': 'application/json'},
+    body:JSON.stringify(userEvent)                           // stringify the data that was
   })
 
   if (response.ok) {
     const event = await response.json();
+    console.log(event, '------ event------>')
     dispatch(registerEvent(event))            // dispatching to change the state for the event that has been json'ed
   }
 }
@@ -58,9 +59,11 @@ export default function eventsReducer (state = {}, action) {      // reducers ma
 
       return newState;                    // get put into the store
     }
-    // case REGISTER_EVENTS {
-    //   newState = {...state}
-    // }
+    case REGISTER_EVENTS: {
+      let newEventState = {...state}
+      newEventState[action.events.id] = action.events;
+      return newEventState;
+    }
 
     default : return state;                 // return newState (how it already is) if the case if not found.
   }

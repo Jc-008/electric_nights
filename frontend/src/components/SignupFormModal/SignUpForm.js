@@ -14,10 +14,10 @@ function SignUpForm() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState([]);
-  console.log('hello to everyone----------------------')
+  // console.log('hello to everyone----------------------')
 
   if (sessionUser) {
-    console.log('Usersession if block !!!!!!----------')
+    // console.log('Usersession if block !!!!!!----------')
     return <Redirect to="/" />;
   }
 
