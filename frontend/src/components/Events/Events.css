@@ -20,14 +20,16 @@
   width: 500px;
 }
 
+.picture_info-container{
+  display:flex;
+}
+
+
 #current-event_picture{
   width: 675px;
 }
 
 
-.picture_info-container{
-  display:flex;
-}
 
 
 /* .event-Page-location{
@@ -43,4 +45,15 @@ float: left
 .event-page-details{
  text-align: right;
  vertical-align: text-top;
+}
+
+
+.register-btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.register-Btn{
+  display: flex
+
 }

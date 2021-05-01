@@ -39,9 +39,10 @@ const EventDetails = () => {
         <div className='event-Page-location'>
           {event.location}
         </div>
-      </div>
-      <div>
-        {!registered ?  <button className='register-Btn' onClick={() => dispatch(registerCurrentEvent(userEvent))}> Register</button> : null}
+        <div className='register-btn-container'>
+          {!registered ?  <button className='register-Btn' onClick={() => dispatch(registerCurrentEvent(userEvent))}> Register</button> : null}
+          {registered ?  <button className='Unregister-Btn' onClick={() => dispatch(registerCurrentEvent(userEvent))}> Unregister</button> : null}
+        </div>
       </div>
     </div>
   )
