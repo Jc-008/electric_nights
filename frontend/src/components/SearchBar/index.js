@@ -5,15 +5,29 @@ import './SearchBar.css';
 
 
 const SearchBar = () => {
-  const [keyword, setKeyword] = useState('')      // empty state for search
+  const [searchTerm, setsearchTerm] = useState('')      // empty state for search
   const history = useHistory();
   const dispatch = useDispatch();
 
-
+  let handleSubmit = (e) => {
+    e.preventDefault();
+  }
 
   return(
     <div className={'searchbar-container'}>
-      <h3>Search Bar here</h3>
+      <form
+        method='get'
+        action='/search/'
+        onSubmit={(e) => handleSubmit(e)}>
+
+        <input
+        value={searchTerm}
+        placeholder='Find Event'
+        onChange={(e) => setsearchTerm(e.target.value)}>
+        </input>
+
+        <button onClick={(e) => handleSubmit(e)} type='submit'>Search</button>
+      </form>
     </div>
   )
 }
