@@ -3,6 +3,7 @@ import {csrfFetch} from './csrf';
 // ACTIONS
 const GET_EVENTS = 'events/GET_EVENTS';
 const REGISTER_EVENTS = 'events/REGISTER_EVENTS'
+const UNREGISTER_EVENTS = 'events/UNREGISTER_EVENTS'
 
 const setEvents = events => ({                      // action, just returns an OBJECT
   type : GET_EVENTS,
@@ -14,8 +15,10 @@ const registerEvent = events => ({            // want to create register events 
   events,
 })
 
-
-
+const UnregisterEvent = events => ({
+  type: UNREGISTER_EVENTS,
+  events,
+})
 
 // ------------------------------------------THUNKS(async actions)---------------------------------------------------------------//
 
@@ -47,6 +50,20 @@ export const registerCurrentEvent = (userEvent) => async dispatch => {
   }
 }
 
+export const unRegisterCurrentEvent = (userEvent) => async dispatch => {          // created without an action so not REALLY an THUNK, so just a FETCH REQUEST
+
+  const response = await csrfFetch('/api/events', {
+    method: 'DELETE',
+    // headers: {'Content-Type': 'application/json'},
+    body:JSON.stringify(userEvent)                           // stringify the data that was
+  })
+
+  if (response.ok) {
+    const currentEvent = await response.json();
+    dispatch(UnregisterEvent(currentEvent))
+  }
+}
+
 
 //--------------------------------------------Reducer --------------------------------------------------------------//
 export default function eventsReducer (state = {}, action) {      // reducers manages change state in an application
@@ -60,6 +77,11 @@ export default function eventsReducer (state = {}, action) {      // reducers ma
       return newState;                    // get put into the store
     }
     case REGISTER_EVENTS: {
+      let newEventState = {...state}
+      newEventState[action.events.id] = action.events;
+      return newEventState;
+    }
+    case UNREGISTER_EVENTS: {
       let newEventState = {...state}
       newEventState[action.events.id] = action.events;
       return newEventState;

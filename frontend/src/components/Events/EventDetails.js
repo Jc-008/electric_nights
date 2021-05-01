@@ -1,7 +1,7 @@
 import {useParams} from 'react-router-dom'
 import { useSelector, useDispatch} from 'react-redux';
 import EventCard from './EventCard';
-import {registerCurrentEvent} from '../../store/event';
+import {registerCurrentEvent, unRegisterCurrentEvent} from '../../store/event';
 import './Events.css';
 
 
@@ -14,8 +14,19 @@ const EventDetails = () => {
   // console.log(Users, 'this is the first element of the array  ---------') ;
   const dispatch = useDispatch();
   if (!event) return null;
-  const {Users} = event
-  const registered = Users.find(id => id !== undefined)
+
+  let registered;
+
+  if (event.Users) {
+    const {Users} = event
+    registered = Users.find(id => id !== undefined)
+  } else {
+    registered = false
+  }
+
+  console.log(registered)
+
+  // use use state user.find as inital value,
 
   // console.log(registered, '-------- registered ')
 
@@ -41,7 +52,7 @@ const EventDetails = () => {
         </div>
         <div className='register-btn-container'>
           {!registered ?  <button className='register-Btn' onClick={() => dispatch(registerCurrentEvent(userEvent))}> Register</button> : null}
-          {registered ?  <button className='Unregister-Btn' onClick={() => dispatch(registerCurrentEvent(userEvent))}> Unregister</button> : null}
+          {registered ?  <button className='Unregister-Btn' onClick={() => dispatch(unRegisterCurrentEvent(userEvent))}> Unregister</button> : null}
         </div>
       </div>
     </div>

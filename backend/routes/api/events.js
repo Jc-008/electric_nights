@@ -21,7 +21,7 @@ router.get('/', asyncHandler( async(req, res) => {
 
 // ------- POST------------------------------------------------------------------------//
 
-// //localhost:3000/events/id
+// //localhost:3000/events/
 // Creating a registration for an EVENT
 router.post('/', asyncHandler( async(req, res) => {        // do i need require Auth here or bad for testing?
   const {userId, eventId } = req.body
@@ -32,7 +32,7 @@ router.post('/', asyncHandler( async(req, res) => {        // do i need require 
     where: {
       id:eventId
     },
-  include:User
+  include:User              // adds a user object as the value of user to the event Object
 })                        // will find an event based on a key of the eventId #
 
   event.ticketCount--
@@ -40,5 +40,29 @@ router.post('/', asyncHandler( async(req, res) => {        // do i need require 
   res.json(event)                        //
 }))
 
+
+// ------- DELETE------------------------------------------------------------------------//
+// //localhost:3000/events/
+router.delete('/',  asyncHandler( async(req, res) => {
+  const {userId, eventId } = req.body
+
+  const currentEvent = await Event.findOne({
+    where: {
+      id: eventId
+    }
+  })
+
+  const userEvent = await UserEvent.findOne({
+    where: {
+      eventId: eventId,
+      userId: userId
+    },
+  })
+
+  currentEvent.ticketCount++
+  await currentEvent.save();
+  await userEvent.destroy();
+  res.json(currentEvent)
+}));
 
 module.exports = router;
