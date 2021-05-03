@@ -9,7 +9,7 @@ const EventCard = ({event}) => {
       <Link to={`/event/${event.id}`}>
         <img className='eventPicture' src={event.imageUrl} alt=""/>
       </Link>
-      <div>
+      <div className='eventCard-title'>
       {event.title}
       </div>
       <div>

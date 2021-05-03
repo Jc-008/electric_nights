@@ -29,7 +29,7 @@ const SearchBar = () => {
         onChange={(e) => setsearchTerm(e.target.value)}>
         </input>
 
-        <button onClick={(e) => handleSubmit(e)} type='submit'>Search</button>
+        <button className='search-btn' onClick={(e) => handleSubmit(e)} type='submit'>Search</button>
       </form>
     </div>
   )

@@ -15,7 +15,7 @@
   align-content: center;
   justify-content: center;
   width: 500px;
-  box-shadow: 0 17px 9px -7px rgba(0,0,0,0.35);
+  box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35);
   transform: scale(1.01);
   border: 1px solid rgb(182, 178, 178);
 }
@@ -75,9 +75,49 @@ float: left
   text-align: center;
   vertical-align: text-top;
   width: 100%;
-  margin: 100px;
+  /* margin: 100px; */
+  border: rgb(182, 178, 178) solid 10px;
+  margin-top: 0px;
+  height: 655px;
 }
 
+
+.eventTitle{
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 25px;
+
+}
+
+.eventDate{
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+
+.event-Page-location {
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 25px;
+  font-style:italic;
+  /* color: #BC00DD; */
+}
+
+.event-Page-ticketCount{
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 25px;
+   color: #BC00DD;
+}
+
+
+
+.eventCard-title{
+  /* color: #d63e17; */
+  font-weight: 800;
+  font-size: 18px;
+}
 
 .register-btn-container{
   display: flex;
@@ -88,4 +128,7 @@ float: left
   display: flex;
   padding: 5px;
   margin: 5px;
+  width: 170px;
+  justify-content: center;
+  border-radius: 5px;
 }

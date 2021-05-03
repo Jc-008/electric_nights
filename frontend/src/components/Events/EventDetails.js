@@ -41,10 +41,10 @@ const EventDetails = () => {
         <img id='current-event_picture' src={event.imageUrl} alt=""/>
       </div>
       <div className='event-page-details'>
-        <div>
+        <div className='eventTitle'>
           {event.title}
         </div>
-        <div>
+        <div className='eventDate'>
         {event.time.toString().slice(0,10)}
         </div>
         <div className='event-Page-location'>
