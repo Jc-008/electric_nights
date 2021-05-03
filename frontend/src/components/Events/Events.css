@@ -143,3 +143,12 @@ float: left
   justify-content: center;
   border-radius: 5px;
 }
+
+.Unregister-Btn{
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  width: 170px;
+  justify-content: center;
+  border-radius: 5px;
+}

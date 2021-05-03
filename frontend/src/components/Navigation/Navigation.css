@@ -1,12 +1,11 @@
 
  .navbar-container{
-  display:grid;
-  grid-template-columns: repeat(12,1fr) ;
-  /* background-color:rgba(41,39,41, 0.8);
-  color:rgb(180, 178, 178); */
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
   background-color: white;
-  color:#111111;
-  min-height:65px;
+  color: #111111;
+  /* min-height: 65px; */
+  height: 130px;
   width: 100%;
 
   /* flex-direction: row; */
