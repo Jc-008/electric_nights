@@ -56,6 +56,9 @@ const EventDetails = () => {
         <div className='event-Page-location'>
           {event.location}
         </div>
+        <div className='event-Page-description'>
+          {event.description}
+        </div>
         <div className='event-Page-ticketCount'>
           Tickets remaining: {event.ticketCount}
         </div>
