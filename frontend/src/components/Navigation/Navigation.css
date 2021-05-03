@@ -25,7 +25,6 @@
  }
 
  .logo-name{
-  /* color:rgb(180, 178, 178); */
   color:#111111;
   justify-content: center;
   text-decoration: none;
@@ -37,7 +36,6 @@
 
 
  .logo-name:hover{
-  /* color:rgb(180, 178, 178); */
   color:#111111;
   justify-content: center;
   text-decoration: none;
@@ -46,8 +44,6 @@
   padding: 0px 35px;
   transition: 400ms linear;
   box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35);
-  /* transform: scale(1.01); */
-  /* border: 1px solid rgb(182, 178, 178); */
  }
 
  .searchBar{
@@ -69,35 +65,37 @@
 
  .link-btn-container{
   grid-column: 11/13;
- }
-
-
-
-
- .link-btn-container .LogInBtn-container,
- .link-btn-container .signInBtn-container {
+  cursor: pointer;
   padding-left: 70px;
  }
 
 
+.LogInBtn-container:hover{
+/* padding-left: px; */
+transition: 400ms linear;
+box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35);
+}
+
+
+.signInBtn-container{
+  padding-left: 45px;
+  /* box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35); */
+
+}
+
+ /* .link-btn-container .LogInBtn-container,
+ .link-btn-container .signInBtn-container {
+  padding-left: 70px;
+  cursor: pointer;
+ } */
+
+
  .profile-btn-container{
   width: inherit;
-  /* background-color: cadetblue; */
   display: flex;
-  /* justify-content: end; */
   cursor:pointer;
-  /* transition: 400ms linear;
-  box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35); */
+
  }
-
-
- /* .profile-btn{
-  background-color: red;
-  border-radius: 5px;
-  width: 18px;
- }
- */
-
 
 
  i{
