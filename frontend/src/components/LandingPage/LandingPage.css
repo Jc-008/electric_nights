@@ -4,7 +4,7 @@
 
 .frontPage-banner-container{
   width: 100%;
-  border: blue solid 2px;
+  border:rgb(182, 178, 178) solid 5px;
   /* object-fit: cover; */
   display:flex;
   justify-content: center;

@@ -1,32 +1,61 @@
 /* for Event cards */
 
+.eventCard{
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  width: 500px;
+  transition: 400ms linear;
+}
+
+.eventCard:hover {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  width: 500px;
+  box-shadow: 0 17px 9px -7px rgba(0,0,0,0.35);
+  transform: scale(1.01);
+  border: 1px solid rgb(182, 178, 178);
+}
+
+.eventCard a,
+.eventCard div {
+  display: flex;
+  justify-content: center;
+}
+
 
 .eventPicture{
-  height: 10rem;
+  /* height: 10rem; */
   display:flex;
   flex-wrap: wrap;
+  max-height: 275px;
+  min-height: 225px;
+  max-width: 325px;
+  min-width: 180px;
 }
 
 .events-container{
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin: 60px;
 }
 
-.eventCard{
-  display: flex;
-  justify-content: center;
-  width: 500px;
-}
 
 .picture_info-container{
-  display:flex;
+  display: flex;
+  height: 100vh;
+  width: 100%;
 }
 
 
 #current-event_picture{
   width: 675px;
+  margin-left: 85px;
 }
 
 
@@ -43,8 +72,10 @@ float: left
 
 
 .event-page-details{
- text-align: right;
- vertical-align: text-top;
+  text-align: center;
+  vertical-align: text-top;
+  width: 100%;
+  margin: 100px;
 }
 
 
@@ -54,6 +85,7 @@ float: left
 }
 
 .register-Btn{
-  display: flex
-
+  display: flex;
+  padding: 5px;
+  margin: 5px;
 }
