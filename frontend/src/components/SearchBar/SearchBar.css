@@ -2,3 +2,8 @@
   display:flex;
   flex-direction: row;
 }
+
+
+.search-btn{
+  border-radius: 5px;
+}

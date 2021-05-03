@@ -4,7 +4,7 @@
 
 .frontPage-banner-container{
   width: 100%;
-  border: blue solid 2px;
+  border:rgb(182, 178, 178) solid 5px;
   /* object-fit: cover; */
   display:flex;
   justify-content: center;
@@ -30,17 +30,21 @@
 
 
 .motto-top{
+  display: flex;
   font-size: 32px;
   line-height: 62px;
-  display: flex;
   align-items: center;
+  color: #BC00DD;
+  font-weight: 800;
 }
 
 .motto-bottom{
+  display: flex;
   font-size: 40px;
   line-height: 62px;
   font-weight: 800;
-  display: flex;
+  /* color: #BC00DD; */
+
   /* margin-top: 100px; */
 }
 

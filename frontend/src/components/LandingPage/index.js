@@ -19,7 +19,7 @@ function LandingPage () {
         {/* <img className='frontPage-Picture' src="https://res.cloudinary.com/dwus7ia33/image/upload/v1619758173/Electric_Nights-pictures/picture15_vlxzkm.jpg" alt="Electric Nights Logo"/> */}
         {/* <img className='frontPage-Picture' src="https://res.cloudinary.com/dwus7ia33/image/upload/v1619757445/Electric_Nights-pictures/Picture32_gncjds.jpg" alt="Electric Nights Logo"/> */}
       </div>
-      <h1>Landing page when not signed in</h1>
+      {/* <h1>Landing page when not signed in</h1> */}
 
       <div className=''>
         <EventList />

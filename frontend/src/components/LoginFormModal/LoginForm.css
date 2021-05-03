@@ -9,7 +9,7 @@
 
 
 .login-btn {
-  border-radius: 3px;
+  border-radius: 5px;
   font-weight: 800;
   padding: 10px 55px;
   margin-top: 20px;
@@ -18,7 +18,7 @@
 }
 
 .demo-btn {
-  border-radius: 3px;
+  border-radius: 5px;
   font-weight: 800;
   padding: 10px 25px;
   margin-top: 20px;
@@ -31,6 +31,7 @@
   background-color: purple;
   border: 2px solid white;
   color: white;
+
 }
 
 .login-wording{

@@ -5,17 +5,19 @@ const EventCard = ({event}) => {
   // console.log(event)
 
   return (
-    <Link to={`/event/${event.id}`}>
-      <div className={''}>
+    <>
+      <Link to={`/event/${event.id}`}>
         <img className='eventPicture' src={event.imageUrl} alt=""/>
-        <div>
-        {event.title}
-        </div>
+      </Link>
+      <div className='eventCard-title'>
+      {event.title}
+      </div>
+      <div>
+      {event.time.toString().slice(0,10)}
       </div>
 
-    </Link>
+    </>
   )
-
 }
 
 export default EventCard;

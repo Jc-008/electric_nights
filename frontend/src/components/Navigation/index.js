@@ -58,28 +58,27 @@ function Navigation({ isLoaded }){
 
   return (              // building blocks of the html below , logic above ^            // want [ logo        searchbar                 randomEventBTN        signinBTN  ]
     <div className={'navbar-container'}>
-      <div className={'logo-button'}>
-        <NavLink className='logo-name' exact to="/">Electric Nights</NavLink>
-      </div>
-
-      <div className={'searchBar'}>
-        <SearchBar/>
-      </div>
-
-      <div className={'randomEventBtn-container'}>
-        <h3 onClick={getRandomEvent}>Randomize Event</h3>
-      </div>
-      {sessionLinks}
-      {/* <div className='link-btn-container'>
-        <div className={'LogInBtn-container'}>
-          <LoginFormModal/>
+        <div className={'logo-button'}>
+          <NavLink className='logo-name' exact to="/">Electric Nights</NavLink>
         </div>
 
-        <div className={'signInBtn-container'}>
-          <SignUpFormModal/>
-        </div> */}
-      {/* </div> */}
+        <div className={'searchBar'}>
+          <SearchBar/>
+        </div>
 
+        <div className={'randomEventBtn-container'}>
+          <h3 className='randomEventBtn-wording' onClick={getRandomEvent}>Randomize Event</h3>
+        </div>
+        {sessionLinks}
+        {/* <div className='link-btn-container'>
+          <div className={'LogInBtn-container'}>
+            <LoginFormModal/>
+          </div>
+
+          <div className={'signInBtn-container'}>
+            <SignUpFormModal/>
+          </div> */}
+        {/* </div> */}
     </div>
   );
 

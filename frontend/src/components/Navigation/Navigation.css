@@ -32,10 +32,26 @@
   font-weight: bold;
   font-size: 20px;
   padding: 0px 35px;
+  transition: 400ms linear;
+ }
+
+
+ .logo-name:hover{
+  /* color:rgb(180, 178, 178); */
+  color:#111111;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0px 35px;
+  transition: 400ms linear;
+  box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35);
+  /* transform: scale(1.01); */
+  /* border: 1px solid rgb(182, 178, 178); */
  }
 
  .searchBar{
-   grid-column: 4/6;
+   grid-column: 3/6;
  }
 
 
@@ -43,6 +59,13 @@
   grid-column: 10/11;
  }
 
+
+.randomEventBtn-wording:hover{
+  transition: 400ms linear;
+  box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35);
+  /* border: 2px solid rgba(188,0,221,0.35); */
+  cursor:pointer;
+}
 
  .link-btn-container{
   grid-column: 11/13;
@@ -62,6 +85,9 @@
   /* background-color: cadetblue; */
   display: flex;
   /* justify-content: end; */
+  cursor:pointer;
+  /* transition: 400ms linear;
+  box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35); */
  }
 
 
