@@ -27,12 +27,7 @@ export const searchFunc = (param) => async dispatch => {      // param is the se
 const searchReducer = (state = [], action) => {
   switch (action.type) {
     case LOADRESULT:
-      const newState = {}
-      action.list.forEach((search) => {
-        newState[search.id] = search;                 // normalized
-      })
-
-      return newState;
+      return {results: [...action.list]}
     default:
       return state;
   }

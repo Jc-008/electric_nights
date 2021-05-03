@@ -10,6 +10,7 @@ import LandingPage from "./components/LandingPage";
 import EventDetails from './components/Events/EventDetails';
 import NavBar from './components/NavBar/index';
 import ProfilePage from './components/ProfilePage/index'
+import SearchResultPage from './components/SearchResultPage'
 import Footer from './components/Footer/';
 
 
@@ -40,6 +41,10 @@ function App() {
 
           <Route path='/Profile'>
             <ProfilePage />
+          </Route>
+
+          <Route path='/search'>
+            <SearchResultPage />
           </Route>
 
         </Switch>

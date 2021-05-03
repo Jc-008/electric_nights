@@ -13,7 +13,7 @@ const SearchBar = () => {
   let handleSubmit = (e) => {
     e.preventDefault();
     dispatch(searchFunc(searchTerm));
-    history.push('/');        // will redirect to search page after
+    history.push('/search');        // will WANT to redirect to search page after
   }
 
   return(
