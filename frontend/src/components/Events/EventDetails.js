@@ -10,6 +10,7 @@ const EventDetails = () => {
   console.log(id,'----------------------id' )
   const sessionUser = useSelector(state => state.session.user);
   const event = useSelector(state => state.events[id] );
+  // console.log(event)
 
   // console.log(Users, 'this is the first element of the array  ---------') ;
   const dispatch = useDispatch();
@@ -24,16 +25,21 @@ const EventDetails = () => {
     registered = false
   }
 
-  console.log(registered)
 
-  // use use state user.find as inital value,
+  function loggedOutUser () {
+    let userEvent;
 
-  // console.log(registered, '-------- registered ')
+    if (sessionUser) {
+      userEvent = {eventId: id, userId: sessionUser.id};
+      return (
+      <div className='register-btn-container'>
+            {!registered ?  <button className='register-Btn' onClick={() => dispatch(registerCurrentEvent(userEvent))}> Register</button> : null}
+            {registered ?  <button className='Unregister-Btn' onClick={() => dispatch(unRegisterCurrentEvent(userEvent))}> Unregister</button> : null}
+      </div>
+      )
+    }
+  }
 
-  // const registeringEvent = ()  => {
-  //   dispatch(registerCurrentEvent(id,sessionUser.id))
-  // }
-  const userEvent = {eventId: id, userId: sessionUser.id};
 
   return (
     <div className='picture_info-container'>
@@ -53,13 +59,16 @@ const EventDetails = () => {
         <div className='event-Page-ticketCount'>
           Tickets remaining: {event.ticketCount}
         </div>
-        <div className='register-btn-container'>
-          {!registered ?  <button className='register-Btn' onClick={() => dispatch(registerCurrentEvent(userEvent))}> Register</button> : null}
-          {registered ?  <button className='Unregister-Btn' onClick={() => dispatch(unRegisterCurrentEvent(userEvent))}> Unregister</button> : null}
-        </div>
+        {loggedOutUser()}
       </div>
     </div>
   )
 }
 
 export default EventDetails;
+
+
+// <div className='register-btn-container'>
+//           {!registered ?  <button className='register-Btn' onClick={() => dispatch(registerCurrentEvent(userEvent))}> Register</button> : null}
+//           {registered ?  <button className='Unregister-Btn' onClick={() => dispatch(unRegisterCurrentEvent(userEvent))}> Unregister</button> : null}
+//         </div>
