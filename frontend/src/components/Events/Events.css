@@ -15,7 +15,8 @@
   align-content: center;
   justify-content: center;
   width: 500px;
-  box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35);
+  /* box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35); */
+  box-shadow: 0 17px 9px -7px rgba(212,0,255,0.35);
   transform: scale(1.01);
   border: 1px solid rgb(182, 178, 178);
 }
@@ -128,6 +129,7 @@ float: left
   /* color: #d63e17; */
   font-weight: 800;
   font-size: 18px;
+  color: rgb(182, 178, 178)
 }
 
 .register-btn-container{

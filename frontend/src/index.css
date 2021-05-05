@@ -9,12 +9,13 @@
 }
 
 
-/* body{
-  background-color: #EAE7DC;
-} */
+body{
+  /* background-color: rgba(27, 27, 27, 0.877); */
+  /* background-color: #16213e; */
+  background-color: #e5e5e5;
 
 
-/* :root {
+}/* :root {
   --shadow: #D3D3D3;
   --background: gray;
 } */

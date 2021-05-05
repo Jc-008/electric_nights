@@ -39,7 +39,7 @@ function App() {
             <EventDetails />
           </Route>
 
-          <Route path='/Profile'>
+          <Route path='/profile'>
             <ProfilePage />
           </Route>
 
