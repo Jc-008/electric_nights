@@ -5,7 +5,7 @@ import "./SearchResultPage.css"
 
 function SearchResultPage() {
   const eventSearch = useSelector(state => state.search.results);
-  console.log(eventSearch)
+  // console.log(eventSearch)
   const history = useHistory();             // maybe use history ?
 
   // I will need map it thru

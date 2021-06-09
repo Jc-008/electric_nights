@@ -11,7 +11,7 @@ const { Event } = require('../../db/models')
 router.get('/:potato', asyncHandler(async (req, res) => {
 
   const userSearchInput = req.params.potato
-  console.log(req.params.potato, '--------------- req.param results ')
+  // console.log(req.params.potato, '--------------- req.param results ')
   // console.log(userSearchInput, '-------------------')
 
   const searchedEvents = await Event.findAll({

@@ -45,7 +45,7 @@ export const registerCurrentEvent = (userEvent) => async dispatch => {
 
   if (response.ok) {
     const event = await response.json();
-    console.log(event, '------ event------>')
+    // console.log(event, '------ event------>')
     dispatch(registerEvent(event))            // dispatching to change the state for the event that has been json'ed
   }
 }

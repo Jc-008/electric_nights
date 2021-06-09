@@ -25,7 +25,7 @@ router.get('/', asyncHandler( async(req, res) => {
 // Creating a registration for an EVENT
 router.post('/', asyncHandler( async(req, res) => {        // do i need require Auth here or bad for testing?
   const {userId, eventId } = req.body
-  console.log(userId, eventId, 'backend side ---------------')
+  // console.log(userId, eventId, 'backend side ---------------')
 
   const registerEvent = await UserEvent.create({userId, eventId})          // created a new instance of userId and eventId on userEvent table
   const event = await Event.findOne({
