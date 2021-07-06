@@ -9,15 +9,18 @@ function Footer() {
     <nav>
       <div className='footer-container'>
         <div className='footer-left-container'>
-          <a className='gitHub-text' target='_blank' href="https://github.com/Jc-008">GitHub</a>
+          <span className='aboutDev-text'>
+            About the Dev:
+            <a className='gitHub-text' target='_blank' href="https://github.com/Jc-008">Jc-008</a>
+          </span>
         </div>
         <div className='footer-right-container'>
-          <a className="wiki-text" target='_blank'>
+          <span className='EC-wording'>
             © Electric Nights
-          </a>
-          <a className="wiki-text" target='_blank' href="https://github.com/Jc-008/electric_nights/wiki">
-            <i className="fab fa-github"></i>
-          </a>
+            <a className="github-icon" target='_blank' href="https://github.com/Jc-008/electric_nights/wiki" >
+              <i className="fab fa-github"></i>
+            </a>
+          </span>
         </div>
       </div>
     </nav>
