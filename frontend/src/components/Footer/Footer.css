@@ -1,14 +1,17 @@
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   /* background-color:rgba(41,39,41, 0.8); */
   /* color:rgb(225,223,217); */
   background-color: white;
   color:#111111;
   height: 45px;
-  width: 96%;
+  width: 100%;
   align-items: center;
   padding: 0 38px;
+  position: fixed;
+  bottom: 0;
+
 }
 
 /* a {
@@ -18,11 +21,12 @@
   text-decoration: none;
 } */
 
-.gitHub-div{
+.footer-left-container{
   display:flex;
   align-items: center;
   font-size: 30px;
   text-decoration: none;
+  background-color: lightblue;
 }
 
 .gitHub-text{
@@ -33,6 +37,13 @@
   color:#111111;
   margin-left: 6px;
   font-weight: bold;
+}
+
+
+
+.footer-right-container {
+display: flex;
+
 }
 
 
