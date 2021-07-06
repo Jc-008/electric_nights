@@ -8,24 +8,6 @@ const faker = require("faker")
 module.exports = {
   up: (queryInterface, Sequelize) => {
 
-    // const randomDescription = () => {
-    //   const descriptions = [
-    //     "Great Dj from the europe ",
-    //     "A hobby shop looking for players to enjoy some good times!",
-    //     "Hobby shop look and feel!",
-    //     "complementary meatloaf made by my mom!",
-    //     "just frat guys who play dnd",
-    //     "place smells like hookah. pretty good",
-    //     "the lodge is great dor a dnd setting!",
-    //     "Come down to my mom's basement!",
-    //     "My therapist said I need friends!"
-    //   ]
-    //   return descriptions[random.integer(0, 10)]
-
-    // }
-
-
-
 
     return queryInterface.bulkInsert('Events', [          // will add event seeders once completed.
 
@@ -97,7 +79,7 @@ module.exports = {
       },
       {
         title: 'Smooth waves presented by Josh Rhythm',
-        imageUrl: 'https://res.cloudinary.com/dwus7ia33/image/upload/v1625604529/Electric_Nights-pictures/picture35_rfluy9.jpg',
+        imageUrl: 'https://res.cloudinary.com/dwus7ia33/image/upload/v1625604347/Electric_Nights-pictures/picture34_cozupt.jpg',
         host: 'HighFly Music',
         location: 'Webster Hall',
         time: faker.date.future(),
@@ -251,7 +233,7 @@ module.exports = {
       },
       {
         title: 'Hard and strong with Cloudfinity',
-        imageUrl: 'https://res.cloudinary.com/dwus7ia33/image/upload/v1625604347/Electric_Nights-pictures/picture34_cozupt.jpg',
+        imageUrl: 'https://res.cloudinary.com/dwus7ia33/image/upload/v1625604529/Electric_Nights-pictures/picture35_rfluy9.jpg',
         host: 'Snare70 sounds',
         location: 'Barcode',
         time: faker.date.future(),
