@@ -1,107 +1,67 @@
-
- .navbar-container{
-  display: grid;
-  grid-template-columns: repeat(12,1fr);
-  background-color: white;
-  color: #111111;
-  /* min-height: 65px; */
-  height: 130px;
+.navbar-header {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  vertical-align: top;
   width: 100%;
+}
 
-  /* flex-direction: row; */
- }
+.navbar-header a {
+  display: block;
+}
 
+.navbar-header .menu-area {
+  height: 80px;
+  position: relative;
+  /* -webkit-transition: background-color .3s ease;
+  -moz-transition: background-color .3s ease;
+  transition: background-color .3s ease; */
+  box-sizing: border-box;
+}
 
- .navbar-container * {
-  display: flex;
-  align-items: center;
- }
+.nav-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  /* background-color: lightgray; */
+}
 
+.navbar-header .nav-container {
+  padding: 0 23px
+}
 
- .logo-button{
-   grid-column: 1/2;
-   justify-content: center;
- }
+.nav-container .nav-position-left {
+  /* position: relative; */
+  float: left;
+  height: 100%;
+  text-align: left;
+}
 
- .logo-name{
-  color:#111111;
-  justify-content: center;
+.nav-container .nav-position-right {
+  /* position: relative; */
+  float: right;
+  height: 100%;
+  text-align: right;
+}
+
+.nav-container .left-inner-nav .right-inner-nav {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.logo-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-name {
+  color: #111111;
+  margin: 0px;
   text-decoration: none;
   font-weight: bold;
+  height: 20px;
   font-size: 20px;
-  padding: 0px 35px;
   transition: 400ms linear;
- }
-
-
- .logo-name:hover{
-  color:#111111;
-  justify-content: center;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 0px 35px;
-  transition: 400ms linear;
-  box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35);
- }
-
- .searchBar{
-   grid-column: 3/6;
- }
-
-
- .randomEventBtn-container{
-  grid-column: 10/11;
- }
-
-
-.randomEventBtn-wording:hover{
-  transition: 400ms linear;
-  box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35);
-  /* border: 2px solid rgba(188,0,221,0.35); */
-  cursor:pointer;
 }
-
- .link-btn-container{
-  grid-column: 11/13;
-  cursor: pointer;
-  padding-left: 70px;
- }
-
-
-.LogInBtn-container:hover{
-/* padding-left: px; */
-transition: 400ms linear;
-box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35);
-}
-
-
-.signInBtn-container{
-  padding-left: 45px;
-  /* box-shadow: 0 17px 9px -7px rgba(188,0,221,0.35); */
-
-}
-
- /* .link-btn-container .LogInBtn-container,
- .link-btn-container .signInBtn-container {
-  padding-left: 70px;
-  cursor: pointer;
- } */
-
-
- .profile-btn-container{
-  width: inherit;
-  display: flex;
-  cursor:pointer;
-
- }
-
-
- i{
-  grid-column: 11/12;
-  display: flex;
-  width:inherit;
-  font-size: 35px;
-  justify-content:flex-end;
-
- }

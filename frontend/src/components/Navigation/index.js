@@ -1,5 +1,5 @@
 // frontend/src/components/Navigation/index.js
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import ProfileButton from './ProfileButon';
@@ -9,10 +9,10 @@ import SearchBar from '../SearchBar';
 import RandomEvent from '../RandomEvent';
 import LogInBtn from '../LogInBtn';
 import SignUpBtn from '../SignUpBtn';
-import {getEvents} from '../../store/event'
+import { getEvents } from '../../store/event'
 import './Navigation.css';
 
-function Navigation({ isLoaded }){
+function Navigation({ isLoaded }) {
   const sessionUser = useSelector(state => state.session.user);
   const events = useSelector(state => state.events);        // pull content out of state
   const dispatch = useDispatch();
@@ -43,54 +43,44 @@ function Navigation({ isLoaded }){
     sessionLinks = (
       <>
         <div className='link-btn-container'>
-        <div className={'LogInBtn-container'}>
-          <LoginFormModal/>
-        </div>
+          <div className={'LogInBtn-container'}>
+            <LoginFormModal />
+          </div>
 
-        <div className={'signInBtn-container'}>
-          <SignUpFormModal/>
-        </div>
-        {/* <NavLink to="/signup">Sign Up</NavLink> */}
+          <div className={'signInBtn-container'}>
+            <SignUpFormModal />
+          </div>
+          {/* <NavLink to="/signup">Sign Up</NavLink> */}
         </div>
       </>
     );
   }
 
-  return (              // building blocks of the html below , logic above ^            // want [ logo        searchbar                 randomEventBTN        signinBTN  ]
-    <div className={'navbar-container'}>
-        <div className={'logo-button'}>
-          <NavLink className='logo-name' exact to="/">Electric Nights</NavLink>
-        </div>
+  return (
+    <div className={'navbar-header'}>
+      <div className={'menu-area'}>
+        <div className={'nav-container'}>
+          <div className={'nav-position-left'}>
+            <div className={'left-inner-nav'}>
+              <div className={'logo-wrapper'}></div>
+              {/* <NavLink className={'logo-name'} exact to="/">Electric Nights</NavLink> */}
+              <a className={'logo-name'} href='/'>Electric Nights</a>
 
-        <div className={'searchBar'}>
-          <SearchBar/>
-        </div>
-
-        <div className={'randomEventBtn-container'}>
-          <h3 className='randomEventBtn-wording' onClick={getRandomEvent}>Randomize Event</h3>
-        </div>
-        {sessionLinks}
-        {/* <div className='link-btn-container'>
-          <div className={'LogInBtn-container'}>
-            <LoginFormModal/>
+            </div>
+          </div>
+          <div className={'nav-position-right'}>
+            <div className={'right-inner-nav'}>
+              <h5>testing</h5>
+              <h5>testing2</h5>
+              <h5>testing3</h5>
+            </div>
           </div>
 
-          <div className={'signInBtn-container'}>
-            <SignUpFormModal/>
-          </div> */}
-        {/* </div> */}
-    </div>
-  );
 
-  // Original code below:
-  // return (              // building blocks of the html below , logic above ^
-  //   <ul>
-  //     <li>
-  //       <NavLink exact to="/">Home</NavLink>
-  //       {isLoaded && sessionLinks}
-  //     </li>
-  //   </ul>
-  // );
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Navigation;
