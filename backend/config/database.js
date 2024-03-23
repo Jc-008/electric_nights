@@ -20,6 +20,9 @@ module.exports = {
     use_env_variable: 'DATABASE_URL',    // when this app is deployed to production, the database will read from this / a URL instead of the username, pw and DB name
     dialect: 'postgres',
     seederStorage: 'sequelize',
+    define: {         // define schema here
+      schema: process.env.SCHEMA
+    },
     dialectOptions: {
       ssl: {
         require: true,
