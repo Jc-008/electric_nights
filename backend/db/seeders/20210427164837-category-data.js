@@ -1,5 +1,12 @@
 'use strict';
 
+// NEW: add this code to each migration file
+let options = {};
+if (process.env.NODE_ENV === 'production') {
+  options.schema = process.env.SCHEMA;  // define your schema in options object
+}
+// END of new code
+
 module.exports = {
   up: (queryInterface, Sequelize) => {
     /*
@@ -12,7 +19,8 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-      return queryInterface.bulkInsert('Categories', [
+   options.tableName = 'Categories'
+      return queryInterface.bulkInsert(options, [
         {edmGenre:'House'},            //  1
         {edmGenre:'DeepHouse'},        //  2
         {edmGenre:'Techno'},           //  3
@@ -31,6 +39,7 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('People', null, {});
     */
-    return queryInterface.bulkDelete('Categories', null, {});
+   options.tableName = 'Categories'
+   return queryInterface.bulkDelete(options, null, {});
   }
 };

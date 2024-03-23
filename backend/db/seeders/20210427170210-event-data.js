@@ -4,6 +4,12 @@ const faker = require("faker")
 // new Date();
 // const random = new Random();
 
+// NEW: add this code to each migration file
+let options = {};
+if (process.env.NODE_ENV === 'production') {
+  options.schema = process.env.SCHEMA;  // define your schema in options object
+}
+// END of new code
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -23,12 +29,8 @@ module.exports = {
     //   return descriptions[random.integer(0, 10)]
 
     // }
-
-
-
-
-  return queryInterface.bulkInsert('Events', [          // will add event seeders once completed.
-
+  options.tableName = 'Events'
+  return queryInterface.bulkInsert(options, [          // will add event seeders once completed.
 {
   title:'Deep and heavy sound presented by Alpha J ',
   imageUrl:'https://res.cloudinary.com/dwus7ia33/image/upload/v1619561032/Electric_Nights-pictures/picture18_ndv47g.jpg',
@@ -267,12 +269,14 @@ module.exports = {
 
   down: (queryInterface, Sequelize) => {
     /*
-      Add reverting commands here.
-      Return a promise to correctly handle asynchronicity.
-
-      Example:
-      return queryInterface.bulkDelete('People', null, {});
+    Add reverting commands here.
+    Return a promise to correctly handle asynchronicity.
+    
+    Example:
+    return queryInterface.bulkDelete('People', null, {});
     */
-      return queryInterface.bulkDelete('Events', null, {});
+   
+   options.tableName = 'Events'
+   return queryInterface.bulkDelete(options, null, {});
   }
 };
