@@ -7,7 +7,7 @@ import './Events.css';
 
 const EventDetails = () => {
   const id = (useParams().id);      // grabs the id of the event from use params
-  console.log(id,'----------------------id' )
+  // console.log(id,'----------------------id' )
   const sessionUser = useSelector(state => state.session.user);
   const event = useSelector(state => state.events[id] );
   // console.log(event)
